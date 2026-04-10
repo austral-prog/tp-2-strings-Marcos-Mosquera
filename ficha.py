@@ -30,15 +30,15 @@ def ficha():
     n2=int(input("Valor de la segunda nota: "))
     n3=int(input("Valor de la tercera nota: "))
     iniciales=nombre[0]+nombre[nombre.find(" ")+1]
-    usuario=nombre.replace(" ",".")
-    archivo=nombre[nombre.find(" ")+1:]+"_"+nombre[:nombre.find(" ")]
+    pre_usuario=nombre[nombre.find(" ")+1::1]+" "+nombre[0:nombre.find(" ")]
+    usuario=pre_usuario.replace(" ",".")
+    archivo=nombre.replace(" ","_")
     
 
 
 
-    print(f"""
-========================
-    Ficha del Alumno          
+    print(f"""========================
+    FICHA DEL ALUMNO
 ========================
 Nombre: {nombre}
 Email: {mail}
@@ -47,7 +47,7 @@ Iniciales: {iniciales.upper()}
 Usuario: {usuario.lower()}
 Email valido: {("@" in mail)}
 Dominio: {mail[mail.find("@")+1:]}
-Nombre de archivo: {archivo.lower()}
+Nombre para archivo: {archivo}
 Cantidad de a: {nombre.count("a")}
 Codigo secreto: {nombre.upper()[::-1]}
 Nota 1: {n1}
@@ -56,11 +56,9 @@ Nota 3: {n3}
 Suma: {n1+n2+n3}
 Promedio: {(n1+n2+n3)/3}
 Promedio entero: {int((n1+n2+n3)/3)}
+========================
 """)
 
 
 
 
-    pass
-
-ficha()

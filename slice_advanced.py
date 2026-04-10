@@ -3,7 +3,5 @@ def slice_advanced():
     en adelante, tomando uno de cada dos (paso 2).
     """
     texto=input("Texto: ")
-    print(texto[3::2])
+    print(texto[4::2])
 
-    pass
-slice_advanced()

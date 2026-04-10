@@ -4,10 +4,8 @@ def rectangle():
     """
     base=int(input("Base: "))
     altura=int(input("Altura: "))
+    print("Base:",base)
+    print("Altura:",altura)    
     print("Area:", base*altura)
     print("Perimetro:", (base*2)+(altura*2))
 
-
-    pass
-
-rectangle()

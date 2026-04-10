@@ -9,26 +9,22 @@ def string_methods():
 Linea 2
 Linea 3"""
 
-    print(F"""
-Strip: {nombre.strip()}
-Lstrip: {nombre.lstrip()}
-Rstrip: {nombre.rstrip()}
-Upper: {frase.upper()}
-Lower: {frase.lower()}
-Title: {frase.title()}
-Find: {frase.find("gran")}
-Replace: {frase.replace("programacion","desarrollo")}
-Count: {frase.count("a")}
-Contiene Python: {"Python" in frase}
-Contiene Java: {"Java" in frase}
-Slice: {frase[:6:]}
-Paso: {frase[:6:2]}
-Reverso: {frase[6:0:-1]}
-Formato: {nombre.strip()} sabe {frase[:6:]}
-{multilinea}
-
-""")
+    print(F"Strip: {nombre.strip()}")
+    print(F"Lstrip: {nombre.lstrip()}")
+    print(F"Rstrip: {nombre.rstrip()}")
+    print(F"Upper: {frase.upper()}")
+    print(F"Lower: {frase.lower()}")
+    print(F"Title: {frase.title()}")
+    print(F"Find: {frase.find('g')}")
+    print(F"Replace: {frase.replace('programacion','desarrollo')}")
+    print(F"Count: {frase.count('a')}")
+    print(F"Contiene Python: {'Python' in frase}")
+    print(F"Contiene Java: {'Java' in frase}")
+    print(F"Slice: {frase[:6:]}")
+    print(F"Paso: {frase[:6:2]}")
+    print(F"Reverso: {frase[5::-1]}")
+    print(F"Formato: {nombre.strip()} sabe {frase[:6:]}")
+    print(F"{multilinea}")
 
 
 
-string_methods()
