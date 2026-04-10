@@ -16,11 +16,9 @@ def change():
 
     vuelto=float(ganancia-gasto)
     vuelto_c=vuelto-int(vuelto)
-    vuelto_p=vuelto-vuelto_c
-    print(vuelto)
-
+    
     print("Pesos:")
-    print(int(vuelto_p))
+    print(int(vuelto))
     print("Centavos:")
-    print(int(vuelto_c*100))
+    print(round(vuelto_c*100))
 
